@@ -6,7 +6,7 @@ def write_movies(movies):
 def read_movies():
     movies = []
     with open(FILENAME) as file:
-        for line in file:
+        for lin file:
             line = line.replace("\n", "")
             movies.append(line)
     return movies   
@@ -32,6 +32,7 @@ def delete_movie(movies):
         print(f"{movie} was deleted.\n")
         
 def display_menu():
+    print("FILENAME = "movies.txt")
     print("The Movie List program")
     print()
     print("COMMAND MENU")
@@ -60,4 +61,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
